@@ -1,0 +1,106 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Master.master.cs" Inherits="Master" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'/>
+	<link href='https://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'/>
+	<link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'/>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"/>
+	<link rel="stylesheet" href="main.css"/>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <asp:ContentPlaceHolder id="NavigationHeader" runat="server">
+            <div class = "nav">
+	            <div class = "container"> 
+		            <ul class="pull-right">
+			            <li><a href="about.aspx">About Us</a></li>
+			            <li><a href="research.aspx">Research</a></li>
+			            <li><a href="documents.aspx">Iteration Documents</a></li>
+			            <li><a href="contact.aspx">Contact</a></li>
+			            <li><a href="donate.aspx">Donate</a></li>
+			            <li><a href="https://www.facebook.com/HydroBurst/?ref=hl"><img src = "http://i.imgur.com/nC0mm8L.png"/></a></li>
+		            </ul>
+		            <ul class="pull-left">
+			            <li><a href="index.aspx"><img src = "http://i.imgur.com/M8qNqSF.png" width="75" height="75"/></a></li>
+			            <li><a href="index.aspx">HydroBurst</a></li>
+	                </ul>
+	            </div>
+            </div>
+            <hr class="thin"/>
+        </asp:ContentPlaceHolder>
+
+        <asp:ContentPlaceHolder id="ContentBody" runat="server"></asp:ContentPlaceHolder>
+        <asp:ContentPlaceHolder id="NavigationFooter" runat="server">
+
+        <hr class="thin"/> 
+	    <div class="content-grid-header">
+		    <div class="container">
+			    <h1>Explore</h1>
+		    </div>
+	    </div>
+	    <div class="content-grid">
+		    <div class="container">
+			    <div class="row">
+				    <div class="col-md-3">
+					    <div class = "thumbnail">
+						    <a href="about.aspx"><img src = "http://i.imgur.com/xBpnOAK.png" class ="img-circle"/></a>
+					    </div>
+					    <div>
+						    <h1>Team HydroBurst</h1>
+						    <p>Meet the team that's making it all possible.</p>
+					    </div>
+				    </div>
+				    <div class="col-md-3">
+					    <div class = "thumbnail">
+						    <a href="research.aspx"><img src = "http://i.imgur.com/e5U1zXH.png"/></a>
+					    </div>
+					    <div>
+						    <h1>ROV Research</h1>
+						    <p>Innovation begins with Team HydroBurst.</p>
+					    </div>
+				    </div>
+				    <div class="col-md-3">
+					    <div class = "thumbnail">
+						    <a href="documents.aspx"><img src = "http://i.imgur.com/ENP24Aq.png"/></a>
+					    </div>
+					    <div>
+						    <h1>Iteration Documentation</h1>
+						    <p>Explore Team HydroBurst's iteration presentations and reports. </p>
+					    </div>
+				    </div>
+				    <div class="col-md-3">
+					    <div class = "thumbnail">
+						    <a href="donate.aspx"><img src = "http://i.imgur.com/n96wywK.png"/></a>
+					    </div>
+					    <div>
+						    <h1>Join us</h1>
+						    <p>Donate and help turn dream into reality.</p>
+					    </div>
+				    </div>
+			    </div>
+		    </div>
+	    </div>
+	    <div class = "footer-nav">
+		    <div class = "container"> 
+			    <ul class="pull-right">
+			        <li><a href="contact.html">Contact Us</a></li>
+			        <li>2015 HydroBurst</li>
+			        <li><a href="http://www.uh.edu/"><img src = "http://i.imgur.com/eF7dKvZ.png" width="50" height="50"/></a></li>
+			    </ul>
+			    <ul class="pull-left">
+				    <li><a href="http://www.marinetech.org/rov-competition/"><img src = "http://i.imgur.com/NZTpwGX.png" width="75" height="75"/></a></li>
+			    </ul>
+		    </div>
+	    </div>       
+        </asp:ContentPlaceHolder>
+    </form>
+</body>
+</html>
